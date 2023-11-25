@@ -1,0 +1,83 @@
+
+/* element selector */
+/* h1{
+
+} */
+
+
+
+/* id selector -> id should be unique*/
+/* #bhakaal1{
+    background-color: crimson;
+}
+
+#bhakaal2{
+    background-color: rgb(77, 220, 20);
+} */
+
+
+
+/* class selector -> we can have same multiple classes */
+/* .bhukalclass{
+   color: brown; 
+} */
+
+
+/* -------------------------------------------------- */
+
+
+/* checking specificity or precendence */
+
+
+/* #glti{
+    color: blue;
+}
+.repeatedglti{
+    color: rgb(0, 255, 255);
+}
+p{
+    color: rgb(255, 0, 242);  
+} */
+
+
+
+/* ---------------------------------------------------- */
+
+
+/* p{
+    color: antiquewhite;
+}
+
+p{
+    color: rgb(220, 250, 215);
+}
+
+p{
+    color: rgb(200, 16, 47);
+} */
+
+
+/* ---------------------------------------------------- */
+
+
+/* attribute selector -> not much used*/
+
+/* input[type="text"]{
+    border: 2px solid red;
+}
+
+
+input[type="password"]{
+    border: 20px solid rgb(26, 255, 0);
+} */
+
+
+/* ---------------------------------------------------- */
+
+/* universal -> always used once*/
+
+*{
+    border: 5px solid rgb(255, 8, 193);
+}
+
+

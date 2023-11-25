@@ -1,0 +1,18 @@
+/* external styling */
+
+p{
+ background-color: bisque;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p , h1{
+    border: 5px dotted pink;
+}
+
+
+
+
+
