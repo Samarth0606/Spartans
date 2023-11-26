@@ -1,0 +1,92 @@
+/* div{
+    height: 500px;
+    width: 500px;
+    border: 2px solid olivedrab;
+} */
+
+/* hover state */
+/* div:hover{
+    background-color: blue;
+    border-radius: 50px;
+    border-radius: 50%;
+} */
+
+/* -------------------------------- */
+
+/* focus */
+/* input{
+    background-color: blue;
+}
+
+input:focus{
+    font-size: 50px;
+    background-color: chartreuse;
+} */
+
+/* -------------------------------- */
+
+/* active */
+
+/* a:active{
+    font-size: 50px;
+    color: rgb(237, 10, 214);
+} */
+
+
+/* -------------------------------- */
+
+/* visited */
+
+/* a:visited{
+    color: springgreen;
+} */
+
+/* -------------------------------- */
+
+/* first-child */
+
+/* li{
+    color: red;
+} */
+
+/* li:first-child{
+    color: red;
+} */
+
+/* -------------------------------- */
+
+/* last-child */
+
+/* li:last-child{
+    color: rgb(224, 251, 18);
+} */
+
+/* --------------------------------- */
+
+/* nth-of-type */
+
+/* li:nth-of-type(3){
+    color: brown;
+}
+li:nth-of-type(2){
+    color: rgb(149, 165, 42);
+} */
+
+/* li:nth-of-type(odd){
+    color: red;
+}
+li:nth-of-type(even){
+    color: green;
+}
+
+li:nth-of-type(3n){
+    color: red;
+}
+li:nth-of-type(2n){
+    color: red;
+} */
+
+/*2n->mutliple , 5->offset*/
+/* li:nth-of-type(2n + 5){  
+    color: red;
+} */

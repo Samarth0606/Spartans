@@ -1,0 +1,25 @@
+/* h1{
+    color: red;
+} */
+
+
+
+/* pseudo-elements --> '::' */
+
+
+/* h1::first-letter{
+    font-size: 100px;
+}
+p::first-line{
+    font-family: cursive;
+}
+
+
+h1::after{
+    content: 'kya hi padha rhe ho';
+} */
+
+/* unicode -> U+''02346 -> for searching referene*/
+/* h1::before{
+    content: '\2764' ;
+} */

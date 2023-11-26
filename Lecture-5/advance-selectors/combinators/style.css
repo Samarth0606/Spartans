@@ -1,0 +1,67 @@
+/* decenedant ->  " " */
+
+/* ol li{
+    color: red;
+} */
+
+/* div ol li{
+    color: green ;
+} */
+
+
+/* div li{ --> nahi kar sakte
+    color : yellow
+} */
+
+/* article li{
+    color: orange;
+} */
+
+/* --------------------- */
+
+/* child ->  ">"*/
+
+
+/* main > section > div > h1{
+    background-color: aquamarine;
+} */
+
+/* div > h1{
+    background-color: aquamarine;
+} */
+
+/* we can use the combination as well */
+/* body div > h1{
+    font-size: 50px;
+    color: red;
+} */
+
+
+/* ------------------------ */
+
+/* adjscent sibling-> "+" */
+
+/* #li1 + li{
+    background-color: blue;
+} */
+
+/* #li2 + li{
+    background-color: blue;
+} */
+
+/* #li3 + li{
+    background-color: blue;
+} */
+
+
+/* ------------------------ */
+
+/* general sibling-> "~" */
+
+/* #li1 ~ li{
+    background-color: blue;
+}  */
+
+/* #li2 ~ li{
+    background-color: blue;
+}  */
