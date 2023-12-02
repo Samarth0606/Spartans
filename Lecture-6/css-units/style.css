@@ -1,0 +1,55 @@
+/* section{ */
+    /*absolute unit */
+    /* height: 100px;  
+    width: 400px;
+    border: 2px solid green;
+} */
+
+/* div{
+    width: 100%;
+    width: 50%;
+    border: 1px solid rgb(246, 161, 4);
+}
+article{
+    border: 1px solid rgb(246, 4, 246);
+} */
+
+
+/* ------------------------------------------ */
+
+/* % */
+/* ul > li {
+    font-size: 200%;
+} */
+
+/* ------------------------------------------ */
+
+
+/* em */
+/* ul > li {
+    font-size: 2em;
+} */
+
+/* ------------------------------------------ */
+
+
+/* rem */
+/* ul > li {
+    font-size: 2rem;
+} */
+
+/* ------------------------------------------ */
+
+
+/* vh & vw -> viewport*/ 
+
+/* section{
+    width: 60vw;
+    height: 60vh;
+    background-color: blanchedalmond;
+}
+
+div{
+    width: 60vw;
+    background-color: blue;
+} */

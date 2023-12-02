@@ -1,0 +1,13 @@
+h1{
+    color: rgb(220, 67, 255);
+}
+
+p{
+    /* color: rgba(220, 67, 255, 1); */
+    color: rgba(220, 67, 255, 0.5);
+}
+h2{
+    color: #ffffff; /* 6 values for color & 2 for alpha channel */
+    color: #00000076; /* 8 values */
+
+}
