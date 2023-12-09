@@ -1,0 +1,119 @@
+
+div{
+    width: 500px;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+h1{
+    color: red;
+}
+
+p{
+    background-color: rgb(67, 214, 18);
+}
+
+
+/* @media screen and (max-width:700px) {
+    h1{
+        color: green;
+    }
+    p{
+        background-color: chocolate;
+    }
+} */
+
+/* ---------------------------------------------- */
+
+/* galat wala */
+/* 
+@media screen and (min-width:900px){
+    h1{
+        color: purple;
+    }
+    p{
+        background-color: cadetblue;
+    }
+}
+@media screen and (min-width:600px){
+    h1{
+        color: rgb(41, 128, 0);
+    }
+    p{
+        background-color: rgb(160, 111, 95);
+    }
+}
+@media screen and (min-width:300px){
+    h1{
+        color: rgb(0, 128, 122);
+    }
+    p{
+        background-color: rgb(246, 246, 5);
+    }
+} */
+
+
+
+/* sahi waala for min-width */
+/* @media screen and (min-width:300px){
+    h1{
+        color: rgb(0, 128, 122);
+    }
+    p{
+        background-color: rgb(246, 246, 5);
+    }
+}
+@media screen and (min-width:600px){
+    h1{
+        color: rgb(41, 128, 0);
+    }
+    p{
+        background-color: rgb(160, 111, 95);
+    }
+}
+@media screen and (min-width:900px){
+    h1{
+        color: purple;
+    }
+    p{
+        background-color: cadetblue;
+    }
+} */
+
+/* sahi wala for max-width */
+/* @media screen and (max-width:900px){
+    h1{
+        color: purple;
+    }
+    p{
+        background-color: cadetblue;
+    }
+}
+@media screen and (max-width:600px){
+    h1{
+        color: rgb(41, 128, 0);
+    }
+    p{
+        background-color: rgb(160, 111, 95);
+    }
+}
+@media screen and (max-width:300px){
+    h1{
+        color: rgb(0, 128, 122);
+    }
+    p{
+        background-color: rgb(246, 246, 5);
+    }
+} */
+
+
+/* --------------------------------------- */
+
+@media screen and (max-width:700px) , (orientation:portrait) {
+    h1{
+        color: magenta;
+    }
+    p{
+        background-color: turquoise;
+    }
+}
