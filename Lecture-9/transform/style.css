@@ -1,0 +1,23 @@
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 200px auto;
+    transition-duration: 2s;
+}
+
+div:hover{
+    /* transform: translateX(200px);
+    transform: translateY(200px); */
+    /* transform: translate(200px , 200px); */
+
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+    /* transform: scale(2,3); */
+
+    transform: skewX(15deg);
+    /* transform: skewY(15deg); */
+}
