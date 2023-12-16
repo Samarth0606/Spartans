@@ -1,0 +1,11 @@
+:root{
+    --munni-badnaam-hui : 64px;
+    --gora-rang : white;
+    --peeche-kya-hai : black;
+}
+
+h1{
+    font-size: var(--munni-badnaam-hui);
+    color: var(--gora-rang);
+    background-color: var(--peeche-kya-hai);
+}
