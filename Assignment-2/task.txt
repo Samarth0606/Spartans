@@ -1,0 +1,165 @@
+1. greet with both names:
+     let obj = {
+         firstName : "Samarth" , 
+         lastName : "Vohra"
+     }
+-----------------------------------------
+2. greet if gender is male
+     let obj = {
+         firstName : "Samarth" , 
+         lastName : "Vohra" ,
+         gender : "male"
+     }
+-----------------------------------------
+3. write a code which prints from 0 to 1000 (for loop)
+-----------------------------------------
+4. write a code to calculate sum from 0 to 1000 and print at the end
+-----------------------------------------
+5. write a prog. to print even numbers in an array
+     let arr = [10,33,45,22,100,98]
+-----------------------------------------
+6. write a prog. to print the largest number of an array
+    let arr = [10,33,45,22,100,98]
+-----------------------------------------
+7. write a prog. that prints the name of all the male people in a object given
+    let user = [
+        {
+            naam:"samarth" , 
+            isMale: true
+        },
+        {
+            naam:"kashish" , 
+            isMale: true
+        },
+        {
+            naam:"maverick" , 
+            isMale: false
+        }
+    ]
+-----------------------------------------
+8. reverse all the elements of an array
+    let arr = [10,33,45,22,100,98]
+-----------------------------------------
+9. write function to give sum of 2 numbers
+-----------------------------
+10 to 13.
+
+var x = 1;
+console.log(x);
+function a(){
+    x=10;
+    console.log(x);
+}
+
+a();
+
+// -----------------------------------
+
+let x = 10;
+console.log(x);
+function a(){
+    x=100;
+    console.log(x);
+}
+a();
+x=1000;
+
+// -----------------------------------
+
+const x = 100;
+console.log(x);
+function a(){
+    x=10;
+    console.log(x);
+}
+a();
+
+// -----------------------------------
+
+function a(){
+    console.log(x);
+}
+a();
+var x=2   
+
+// -----------------------------------
+
+let x;
+function b(){
+    console.log(x);
+}
+b();
+x=2;
+// -----------------------------------
+
+function a(){
+    console.log(x);
+}
+a();
+let x=2 
+
+
+// -----------------------------------
+
+var a=1;
+let b=2;
+{
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+console.log(b);
+
+// ----------------------------------
+ 
+
+ function x(){
+     var a =7;
+     function y(){
+         console.log(a);
+     }
+     return y;
+ }
+ var z =  x();
+ console.log(z);
+ z();
+
+
+-----------------------------
+14. string methods -> length , toUpperCase() , toLowerCase() , trim() , split() , reverse() , replace() , replaceAll() , slice() , splice() , indexOf() , lastIndexOf(), concat()
+-----------------------------
+15. array methods -> push() , pop() , ushift() , shift() , concat() , forEach() , map() , filter() ,  reduce() , find() , sort()
+-----------------------------
+
+16. What are static methods?
+    Date() constructor function --> code:  let nayaDin =  new Date();
+    console.log(nayaDin.getDate())
+    console.log(nayaDin.getMonth() + 1)
+    console.log(nayaDin.getFullYear())
+    console.log(nayaDin.getHours() - 12)
+    console.log(nayaDin.getMinutes())
+    console.log(nayaDin.getSeconds())
+    console.log(nayaDin.getTime())
+-----------------------------
+17. Math method -> Math.random() , floor() , ceil() , round() , sqrt() , max() , min() , pow() , PI , LN2
+-----------------------------
+18. let obj = {
+        naam : "bhakaali", 
+        umar : 27 , 
+        isZinda : function(){
+            return `haa mai zinda hu`
+        }
+    }
+    console.log(obj)
+    console.log(Object.keys(obj))
+    console.log(Object.values(obj))
+    console.log(Object.entries(obj))
+    console.log(obj.hasOwnProperty('age'))  //odd one out as it works on obj not on JS class (static method)
+    console.log(Object.assign(obj , {newProperty:"new Value"}))
+    console.log(Object.assign({} , obj , {newProperty:"new Value"}))
+-----------------------------
+19. loupe -> http://latentflip.com/loupe/ -> visually how js is being run actually like we do in browser with breakpoints
