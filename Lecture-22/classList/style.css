@@ -1,0 +1,12 @@
+.hi{
+    border: 2px solid black;
+}
+.bye{
+    background-color: yellow;
+}
+.sam{
+    text-decoration: line-through;
+}
+.tom{
+    font-family: cursive;
+}
