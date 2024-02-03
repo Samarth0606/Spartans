@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    background-color: #1c1c1c;
+    height: 90vh;
+    width: 400px;
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+input{
+    flex-grow: 1;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 36px;
+    text-align: right;
+    outline: none;
+    border: 0px;
+    border-radius: 20px;
+    padding: 0px 32px;
+
+}
+#btn-list{
+    flex-grow: 2;
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 5px;
+}
+button{
+    width: 80%;
+    height: 80%;
+    place-self: center;
+    outline: none;
+    border: 0px;
+    border-radius: 50% ;
+    font-size: 28px;
+    background-color: #505050;
+    color: white;
+    transition-duration: 300ms ;
+}
+
+.yellow-btn{
+    color: white;
+    background-color: rgb(234, 169, 48);
+    font-size: 34px;
+}
+
+button:active{
+    transform: scale(0.8);
+}
+
+.grey-btn{
+    background-color: lightgray;
+    color: black;
+}
+.merge{
+    grid-column: span 2;
+    border-radius: 75px;
+}
+
+
