@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>Displaying all the commentsArray</h1>
+
+    <section>
+      <% for(let item of commentsArray){ %>
+      <div class="div-border">
+        <h1>ID: <%=item.id%></h1>
+        <h2>Author: <%=item.author%></h2>
+        <h2>Comment:<%=item.comments%></h2>
+      </div>
+      <% } %>
+    </section>
+  </body>
+</html>

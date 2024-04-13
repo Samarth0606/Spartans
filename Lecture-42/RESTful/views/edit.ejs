@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>Form to Edit a Comment</h1>
+    <form action="/comments/<%=foundComment.id%>?_method=PATCH" method="POST">
+      <label for="auth">Author:</label>
+      <input
+        type="text"
+        name="author"
+        id="auth"
+        value="<%=foundComment.author%>"
+      />
+      <br />
+      <label for="comm">Comments:</label>
+      <input
+        type="text"
+        name="comments"
+        id="comm"
+        value="<%=foundComment.comments%>"
+      />
+      <br />
+      <button type="submit ">Edit</button>
+    </form>
+  </body>
+</html>
