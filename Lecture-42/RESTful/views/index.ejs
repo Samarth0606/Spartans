@@ -15,6 +15,9 @@
         <h1>ID: <%=item.id%></h1>
         <h2>Author: <%=item.author%></h2>
         <h2>Comment:<%=item.comments%></h2>
+        <form action="/comments/<%=item.id%>?_method=DELETE" method="POST">
+          <button>Delete</button>
+        </form>
       </div>
       <% } %>
     </section>

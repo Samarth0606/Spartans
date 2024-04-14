@@ -77,7 +77,7 @@ app.get("/comments/:idd/edit", (req, res) => {
   res.render("edit", { foundComment });
 });
 
-//tsk-6 => actually edit
+//task-6 => actually edit
 app.patch("/comments/:idd", (req, res) => {
   let { idd } = req.params;
   let foundComment = commentsArray.find(
@@ -87,6 +87,16 @@ app.patch("/comments/:idd", (req, res) => {
   foundComment.author = author;
   foundComment.comments = comments;
   res.redirect(`/comments/${idd}`);
+});
+
+//task-7 => delete a comment
+app.delete("/comments/:idd", (req, res) => {
+  let { idd } = req.params;
+  let newArr = commentsArray.filter(
+    (everyComment) => parseInt(idd) !== everyComment.id
+  );
+  commentsArray = newArr;
+  res.redirect("/comments");
 });
 
 const PORT = 8080;
