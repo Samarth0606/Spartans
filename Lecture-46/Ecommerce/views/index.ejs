@@ -6,12 +6,16 @@
     <title>Document</title>
   </head>
   <body>
+    <button><a href="/product/new">New product</a></button>
+    <br />
     <%for(let item of allProducts){%>
     <div>
       <h1>NAME:<%=item.name%></h1>
       <img src="<%=item.img%>" alt="imgg" />
       <h1>PRICE: $ <%=item.price%></h1>
       <h1>DESC:<%=item.desc%></h1>
+      <button><a href="/products/<%=item._id%>">show</a></button>
+      <button><a href="/products/<%=item._id%>/edit">edit</a></button>
     </div>
     <%}%>
   </body>

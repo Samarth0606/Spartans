@@ -14,17 +14,44 @@ router.get("/product/new", (req, res) => {
 });
 
 //actually adding in the db
-router.post("/products", (req, res) => {
-  console.log(req.body);
-  res.send(req.body);
+router.post("/products", async (req, res) => {
+  let { name, img, price, desc } = req.body;
+  await Product.create({ name, img, price, desc });
+  res.redirect("/products");
 });
 
 //show a particular product
+router.get("/products/:id", async (req, res) => {
+  let { id } = req.params;
+  let foundProduct = await Product.findById(id);
+  res.render("show", { foundProduct });
+});
 
 //form to edit a product
 
+router.get("/products/:id/edit", async (req, res) => {
+  let { id } = req.params;
+  let foundProduct = await Product.findById(id);
+  res.render("edit", { foundProduct });
+});
+
 // actually editing in db
 
+router.patch("/products/:id", async (req, res) => {
+  let { id } = req.params;
+  let { name, img, price, desc } = req.body;
+
+  await Product.findByIdAndUpdate(id, { name, img, price, desc });
+  res.redirect("/products");
+});
+
 // deleting from db
+
+router.delete("/products/:id", async (req, res) => {
+  let { id } = req.params;
+
+  await Product.findByIdAndDelete(id);
+  res.redirect("/products");
+});
 
 module.exports = router;

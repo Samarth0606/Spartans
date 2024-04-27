@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form for adding new product</h1>
+    <form action="/products/<%=foundProduct._id%>?_method=PATCH" method="POST">
+      <div>
+        <label for="naam">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="naam"
+          placeholder="Enter the product name"
+          value="<%=foundProduct.name%>"
+        />
+      </div>
+      <div>
+        <label for="img">Image:</label>
+        <input
+          type="text"
+          name="img"
+          id="img"
+          placeholder="Enter the image url"
+          value="<%=foundProduct.img%>"
+        />
+      </div>
+      <div>
+        <label for="daam">Price:</label>
+        <input
+          type="number"
+          name="price"
+          id="daam"
+          placeholder="Enter the price"
+          value="<%=foundProduct.price%>"
+        />
+      </div>
+      <div>
+        <label for="descr">Description:</label>
+        <input
+          type="text"
+          name="desc"
+          id="descr"
+          placeholder="Enter the description"
+          value="<%=foundProduct.desc%>"
+        />
+      </div>
+      <button>Edit</button>
+    </form>
+  </body>
+</html>
