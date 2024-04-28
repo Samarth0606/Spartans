@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/star.css" />
+    <title>Document</title>
+  </head>
+  <body style="display: flex; justify-content: space-around">
+    <div style="width: 400px">
+      <h1>Displayig a particular product</h1>
+      <button><a href="/products">back</a></button>
+
+      <br />
+      <h1>NAME:<%=foundProduct.name%></h1>
+      <img src="<%=foundProduct.img%>" alt="imgg" />
+      <h1>PRICE: $ <%=foundProduct.price%></h1>
+      <h1>DESC:<%=foundProduct.desc%></h1>
+      <form
+        action="/products/<%=foundProduct._id%>?_method=DELETE"
+        method="POST"
+      >
+        <button>delete</button>
+      </form>
+    </div>
+
+    <div style="width: 400px">
+      <form action="/products/<%=foundProduct._id%>/review" method="POST">
+        <div>
+          <label for="rate">Rating:</label>
+          <fieldset class="starability-basic">
+            <input
+              type="radio"
+              id="no-rate"
+              class="input-no-rate"
+              name="rating"
+              value="0"
+              checked
+              aria-label="No rating."
+            />
+            <input type="radio" id="first-rate1" name="rating" value="1" />
+            <label for="first-rate1" title="Terrible">1 star</label>
+            <input type="radio" id="first-rate2" name="rating" value="2" />
+            <label for="first-rate2" title="Not good">2 stars</label>
+            <input type="radio" id="first-rate3" name="rating" value="3" />
+            <label for="first-rate3" title="Average">3 stars</label>
+            <input type="radio" id="first-rate4" name="rating" value="4" />
+            <label for="first-rate4" title="Very good">4 stars</label>
+            <input type="radio" id="first-rate5" name="rating" value="5" />
+            <label for="first-rate5" title="Amazing">5 stars</label>
+          </fieldset>
+        </div>
+        <div>
+          <label for="comment">Comments:</label>
+          <textarea name="comments" id="comment" cols="30" rows="5"></textarea>
+        </div>
+        <button>Add review</button>
+      </form>
+
+      <div>
+        <% if(foundProduct.reviews){ %>
+        <div>
+          <%for(let review of foundProduct.reviews){%> <%if(review.createdAt){%>
+          <h1>CreatedAt: <%=review.createdAt.toDateString()%></h1>
+          <%} %>
+          <p class="starability-result" data-rating="<%=review.rating%>">
+            Rated: <%=review.rating%>
+          </p>
+          <h1>Comment:<%=review.comments%></h1>
+          <%}%>
+        </div>
+        <%}%>
+      </div>
+    </div>
+  </body>
+</html>
